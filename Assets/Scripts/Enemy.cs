@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public int healthPoint;
     public string enemyName;
     public int baseAttack;
+    public float enemySpeedMove;
 
     void Start()
     {
