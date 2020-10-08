@@ -22,4 +22,4 @@
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 # Preview 
 
-![](https://github.com/dewaprabawa/IOSfundamentalSubmission/blob/master/1.png) 
+![](https://github.com/dewaprabawa/RPG-2D/blob/main/Picture/ezgif.com-video-to-gif-16.gif) 
