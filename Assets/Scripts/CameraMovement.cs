@@ -12,11 +12,6 @@ public class CameraMovement : MonoBehaviour
     public Vector2 maxPosition;
     public Vector2 minPosition;
 
-    void Awake()
-    {
-        
-    }
-
     void LateUpdate()
     {
         if(transform.position != target.position){

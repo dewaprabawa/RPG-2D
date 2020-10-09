@@ -13,11 +13,6 @@ public class PotBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Smash(){
         animator.SetBool("isSmashed",true);
         StartCoroutine(breakCoroutine());

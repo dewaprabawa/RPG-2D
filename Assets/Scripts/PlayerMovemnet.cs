@@ -19,9 +19,12 @@ public class PlayerMovemnet : MonoBehaviour
     private Animator animator;
 
     public PlayerState currentState;
+
+    private Rigidbody2D rigidbody;
     
     private void Awake()
     {
+        rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.SetFloat("move_x",0);
         animator.SetFloat("move_y",-1);
@@ -71,7 +74,10 @@ public class PlayerMovemnet : MonoBehaviour
 
     void MoveCharacter(){
           change.Normalize();
-          transform.Translate(new Vector3(change.x,change.y,0) * speed_player * Time.deltaTime);
+        //   transform.Translate(new Vector3(change.x,change.y,0) * speed_player * Time.deltaTime);
+        rigidbody.MovePosition(
+            transform.position + change * speed_player * Time.deltaTime
+        );
     }
 
 }
